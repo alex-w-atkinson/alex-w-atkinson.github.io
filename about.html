@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block inner_head %}
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(https://images.rawpixel.com/image_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMjUtMDFiLmpwZw.jpg);
+            height: 100%
+        }
+
+        h1, h2{
+            color: #003366;
+        }
+
+        section{
+            margin: 50px;
+        }
+
+        .inline-links a {
+            margin-right: 10px; /* Space between links */
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 2rem;
+            height: 50vh;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row; /* Ensure child elements stack vertically */
+            align-items: center; /* Center child elements horizontally */
+            justify-content: space-evenly;
+
+        }
+
+
+        .footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <title>About Us</title>
+</head>
+<body>
+
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div class="container">
+        <section>
+            <h1><b>Riverdale Tutoring Website</b></h1>
+
+            <p>This is the Riverdale tutoring website designed to help connect you with your fellow Riverdale students who can help you improve your educational experience.</p>
+        </section>
+
+        <section>
+            <h2>Created by the Computer Science Development Club</h2>
+            <p>If you have any questions or would like to get in touch with the leaders of CSDC, please contact us at:</p>
+            <div class="inline-links">
+                <a href="mailto:aatkinson26@riverdale.edu">aatkinson26@riverdale.edu</a>
+                <a href="mailto:wliu27@riverdale.edu">wliu27@riverdale.edu</a>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>
+
+
+{% endblock %}
